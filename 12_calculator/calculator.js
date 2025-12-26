@@ -21,13 +21,6 @@ const power = function(a,b) {
 };
 
 const factorial = function(num) {
-	//`factorial()`: given a single number, find its [factorial]
-  /*const final = num;
-  while (num > 1) {
-    num--;
-    final = final * num;
-  }
-  return final;*/
   let product = 1;
   for (let i = num; i > 0; i--) {
     product *= i;
