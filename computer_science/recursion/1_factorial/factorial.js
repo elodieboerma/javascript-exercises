@@ -1,7 +1,7 @@
 const factorial = function(int) {
     if (int === 0) {
         return 1;
-    } else if (int < 0 || int % 1 !== 0 || typeof int !== 'number') {
+    } else if (int < 0 || !Number.isInteger(int)) {
         return undefined;
     }
     return int * factorial(int - 1);
